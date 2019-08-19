@@ -65,6 +65,11 @@ personalInfo = document.querySelector('.bio-info')
 personalInfo.remove()
 
 Part 2:
+Removing elements in DOm
+let barStuff = document.querySelectorAll('.bar-default')
+barStuff[2].remove()
+
+Adding elements in DOM
 Question 1:
 let pikachuPic = document.querySelector('#right-image > img')
 let pikaClone = pikachuPic.cloneNode(true)
