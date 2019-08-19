@@ -74,7 +74,7 @@ Question 1:
 let pikachuPic = document.querySelector('#right-image > img')
 let pikaClone = pikachuPic.cloneNode(true)
 let picSection = document.querySelector('section > :nth-child(2)')
-picSection.adppendChild(pikeClone)
+picSection.appendChild(pikaClone)
 
 Question 2:
 for (let i = 0; i < 10; i++) {
