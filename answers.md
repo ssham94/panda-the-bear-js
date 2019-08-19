@@ -1,3 +1,4 @@
+Part 1:
 Question 1:
 let = profilePic = document.querySelector('img')
 profilePic.src = 'https://placebear.com/g/400/400'
@@ -62,3 +63,34 @@ submitButton.disabled = true
 Question 15:
 personalInfo = document.querySelector('.bio-info')
 personalInfo.remove()
+
+Part 2:
+Question 1:
+let pikachuPic = document.querySelector('#right-image > img')
+let pikaClone = pikachuPic.cloneNode(true)
+let picSection = document.querySelector('section > :nth-child(2)')
+picSection.adppendChild(pikeClone)
+
+Question 2:
+for (let i = 0; i < 10; i++) {
+	let newPikaClone = document.createElement('img')
+	newPikaClone.src = 'images/pikachu-drawing.jpg'
+	picSection.appendChild(newPikaClone)
+}
+
+or
+
+for (let i = 0; i < 10; i++) {
+	picSection.appendChild(pikaClone.cloneNode(true))
+}
+
+Question 3:
+let bioList = document.querySelector('.bio-list')
+bioList.appendChild(listItem)
+let today = new Date()
+let rightSpan = document.createElement('span')
+rightSpan.innerText = today
+bioList.lastElementChild.appendChild(rightSpan)
+bioList.lastElementChild.classList.add('bio-info-item')
+bioList.lastElementChild.firstElementChild.classList.add('bio-info-title')
+bioList.lastElementChild.lastElementChild.classList.add('bio-info-published-date')
